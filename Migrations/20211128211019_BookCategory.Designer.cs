@@ -4,14 +4,16 @@ using Hatos_Paul_Lab8.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Hatos_Paul_Lab8.Migrations
 {
     [DbContext(typeof(Hatos_Paul_Lab8Context))]
-    partial class Hatos_Paul_Lab8ContextModelSnapshot : ModelSnapshot
+    [Migration("20211128211019_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
